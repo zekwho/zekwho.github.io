@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dn_zeK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:     #02080e;
+    --panel:  rgba(0,18,36,0.95);
+    --blue:   #00d4ff;
+    --blue2:  #4488ff;
+    --border: rgba(0,212,255,0.25);
+    --dim:    rgba(0,212,255,0.55);
+    --text:   #b8d8ff;
+    --white:  #e8f4ff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Scanlines */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 2px,
+      rgba(0,0,0,0.12) 2px, rgba(0,0,0,0.12) 4px
+    );
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .container {
+    max-width: 640px;
+    width: 100%;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    padding: 48px 40px;
+    position: relative;
+  }
+
+  /* Corner accents */
+  .container::before, .container::after {
+    content: '';
+    position: absolute;
+    width: 16px; height: 16px;
+    border-color: var(--blue);
+    border-style: solid;
+  }
+  .container::before { top: -2px; left: -2px; border-width: 2px 0 0 2px; }
+  .container::after  { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--dim);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(32px, 8vw, 52px);
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: 4px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  h1 span { color: var(--blue); }
+
+  .tagline {
+    font-size: 13px;
+    color: var(--dim);
+    letter-spacing: 0.12em;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .bio {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 32px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .link-item:hover {
+    background: rgba(0,212,255,0.06);
+    border-color: var(--blue);
+  }
+
+  .link-label { color: var(--dim); font-size: 10px; min-width: 60px; }
+
+  .footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 24px;
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 0.1em;
+  }
+  .footer a { color: var(--dim); text-decoration: none; }
+  .footer a:hover { color: var(--blue); }
+
+  .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--blue);
+    animation: blink 1.2s steps(1) infinite;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="eyebrow">// HOLONET NODE — DN_ZEK.GITHUB.IO</p>
+  <h1>dn_ze<span>K</span></h1>
+  <p class="tagline">VARIETY STREAMER ◆ TWITCH + KICK ◆ MON–FRI</p>
+
+  <p class="bio">
+    Professional vibe coder & degen on a journey to become a traditional programmer.
+    Simulcasting variety content across Twitch and Kick — games, coding, chaos.
+    Come hang.
+  </p>
+
+  <div class="links">
+    <a class="link-item" href="https://twitch.tv/dn_zek" target="_blank">
+      <span class="link-label">TWITCH</span>
+      twitch.tv/dn_zek
+    </a>
+    <a class="link-item" href="https://kick.com/dn-zek" target="_blank">
+      <span class="link-label">KICK</span>
+      kick.com/dn-zek
+    </a>
+    <a class="link-item" href="https://youtube.com/@dn_zeK" target="_blank">
+      <span class="link-label">YOUTUBE</span>
+      youtube.com/@dn_zeK
+    </a>
+    <a class="link-item" href="https://bsky.app/profile/dn-zek.bsky.social" target="_blank">
+      <span class="link-label">BLUESKY</span>
+      @dn-zek.bsky.social
+    </a>
+    <a class="link-item" href="https://github.com/dn-zek" target="_blank">
+      <span class="link-label">GITHUB</span>
+      github.com/dn-zek
+    </a>
+  </div>
+
+  <div class="footer">
+    <span><span class="dot"></span>SIGNAL ONLINE</span>
+    <a href="/tos.html">TERMS OF SERVICE</a>
+    <a href="/privacy.html">PRIVACY POLICY</a>
+  </div>
+</div>
+</body>
+</html>

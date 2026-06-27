@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — dn_zeK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #02080e; --panel: rgba(0,18,36,0.95);
+    --blue: #00d4ff; --border: rgba(0,212,255,0.25);
+    --dim: rgba(0,212,255,0.55); --text: #b8d8ff; --white: #e8f4ff;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--text);
+    font-family:'Share Tech Mono',monospace;
+    min-height:100vh; padding:40px 20px;
+    display:flex; flex-direction:column; align-items:center;
+  }
+  body::before {
+    content:''; position:fixed; inset:0; pointer-events:none; z-index:100;
+    background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.12) 2px,rgba(0,0,0,0.12) 4px);
+  }
+  .container {
+    max-width:680px; width:100%;
+    border:1px solid var(--border); background:var(--panel);
+    padding:48px 40px; position:relative; margin-top:20px;
+  }
+  .container::before,.container::after {
+    content:''; position:absolute; width:16px; height:16px;
+    border-color:var(--blue); border-style:solid;
+  }
+  .container::before { top:-2px; left:-2px; border-width:2px 0 0 2px; }
+  .container::after  { bottom:-2px; right:-2px; border-width:0 2px 2px 0; }
+  .eyebrow { font-size:10px; letter-spacing:0.2em; color:var(--dim); margin-bottom:10px; }
+  h1 { font-family:'Orbitron',sans-serif; font-size:28px; font-weight:900; color:var(--white); letter-spacing:3px; margin-bottom:6px; }
+  .updated { font-size:10px; color:var(--dim); letter-spacing:0.12em; margin-bottom:32px; padding-bottom:24px; border-bottom:1px solid var(--border); }
+  h2 { font-size:12px; letter-spacing:0.18em; color:var(--blue); margin:28px 0 10px; }
+  p  { font-size:12px; line-height:1.85; color:var(--text); margin-bottom:10px; }
+  a  { color:var(--blue); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .back { display:inline-block; margin-top:32px; font-size:11px; letter-spacing:0.12em; color:var(--dim); text-decoration:none; }
+  .back:hover { color:var(--blue); }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="eyebrow">// LEGAL — DN_ZEK.GITHUB.IO/TOS</p>
+  <h1>TERMS OF SERVICE</h1>
+  <p class="updated">LAST UPDATED: JUNE 27, 2026</p>
+
+  <h2>01 — OVERVIEW</h2>
+  <p>
+    This document governs the use of the dn_zeK Stream Notif automation tool
+    ("the App"), a personal automation service operated solely by the channel
+    owner (dn_zeK). The App is not a public-facing product and is not
+    available to other users or third parties.
+  </p>
+
+  <h2>02 — PURPOSE</h2>
+  <p>
+    The App automates social media notifications when a live stream begins or
+    ends on Twitch (twitch.tv/dn_zek) and Kick (kick.com/dn-zek). It posts
+    go-live announcements to the operator's own connected social media accounts
+    and removes those announcements when the stream concludes.
+  </p>
+
+  <h2>03 — SCOPE OF USE</h2>
+  <p>
+    By design, only the account owner (dn_zeK) interacts with this application.
+    No other users are granted access, and no services are offered to the
+    general public through this App.
+  </p>
+
+  <h2>04 — THIRD-PARTY PLATFORMS</h2>
+  <p>
+    The App integrates with TikTok, Bluesky, YouTube, Facebook, and Instagram
+    APIs solely to post and delete content on accounts owned and operated by
+    dn_zeK. Use of these platforms is subject to their respective terms of
+    service. This App does not facilitate any interaction with third-party
+    user accounts.
+  </p>
+
+  <h2>05 — DISCLAIMER</h2>
+  <p>
+    This service is provided as-is with no warranties of any kind, express or
+    implied. The operator reserves the right to modify, suspend, or discontinue
+    the App at any time without notice.
+  </p>
+
+  <h2>06 — CONTACT</h2>
+  <p>
+    For questions regarding these terms, contact via
+    <a href="https://twitch.tv/dn_zek">twitch.tv/dn_zek</a> or
+    <a href="https://bsky.app/profile/dn-zek.bsky.social">@dn-zek.bsky.social</a>.
+  </p>
+
+  <a class="back" href="/">← BACK TO HOME</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — dn_zeK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #02080e; --panel: rgba(0,18,36,0.95);
+    --blue: #00d4ff; --border: rgba(0,212,255,0.25);
+    --dim: rgba(0,212,255,0.55); --text: #b8d8ff; --white: #e8f4ff;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--text);
+    font-family:'Share Tech Mono',monospace;
+    min-height:100vh; padding:40px 20px;
+    display:flex; flex-direction:column; align-items:center;
+  }
+  body::before {
+    content:''; position:fixed; inset:0; pointer-events:none; z-index:100;
+    background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.12) 2px,rgba(0,0,0,0.12) 4px);
+  }
+  .container {
+    max-width:680px; width:100%;
+    border:1px solid var(--border); background:var(--panel);
+    padding:48px 40px; position:relative; margin-top:20px;
+  }
+  .container::before,.container::after {
+    content:''; position:absolute; width:16px; height:16px;
+    border-color:var(--blue); border-style:solid;
+  }
+  .container::before { top:-2px; left:-2px; border-width:2px 0 0 2px; }
+  .container::after  { bottom:-2px; right:-2px; border-width:0 2px 2px 0; }
+  .eyebrow { font-size:10px; letter-spacing:0.2em; color:var(--dim); margin-bottom:10px; }
+  h1 { font-family:'Orbitron',sans-serif; font-size:28px; font-weight:900; color:var(--white); letter-spacing:3px; margin-bottom:6px; }
+  .updated { font-size:10px; color:var(--dim); letter-spacing:0.12em; margin-bottom:32px; padding-bottom:24px; border-bottom:1px solid var(--border); }
+  h2 { font-size:12px; letter-spacing:0.18em; color:var(--blue); margin:28px 0 10px; }
+  p  { font-size:12px; line-height:1.85; color:var(--text); margin-bottom:10px; }
+  ul { font-size:12px; line-height:1.85; color:var(--text); margin:0 0 10px 20px; }
+  li { margin-bottom:4px; }
+  a  { color:var(--blue); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .back { display:inline-block; margin-top:32px; font-size:11px; letter-spacing:0.12em; color:var(--dim); text-decoration:none; }
+  .back:hover { color:var(--blue); }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="eyebrow">// LEGAL — DN_ZEK.GITHUB.IO/PRIVACY</p>
+  <h1>PRIVACY POLICY</h1>
+  <p class="updated">LAST UPDATED: JUNE 27, 2026</p>
+
+  <h2>01 — OVERVIEW</h2>
+  <p>
+    This Privacy Policy describes how dn_zeK Stream Notif ("the App") handles
+    information. The App is a personal automation tool used solely by its
+    creator (dn_zeK) to post and delete go-live notifications on connected
+    social media accounts when a Twitch or Kick stream begins or ends.
+  </p>
+
+  <h2>02 — DATA COLLECTED</h2>
+  <p>
+    The App collects no personal data from any users. It does not operate a
+    website with user sign-in, does not log visitor information, and does not
+    use cookies or analytics tracking of any kind.
+  </p>
+  <p>
+    The only data the App processes is:
+  </p>
+  <ul>
+    <li>Stream status events from Twitch and Kick (online / offline signals)</li>
+    <li>The current game title being streamed (for inclusion in post text)</li>
+    <li>Temporary access tokens stored locally for API authentication</li>
+  </ul>
+  <p>None of this data is shared with third parties or stored beyond the active stream session.</p>
+
+  <h2>03 — THIRD-PARTY API ACCESS</h2>
+  <p>
+    The App uses the following APIs exclusively to manage content on accounts
+    owned by dn_zeK:
+  </p>
+  <ul>
+    <li>TikTok Content Posting API — to post and delete go-live notifications</li>
+    <li>Bluesky AT Protocol — to post and delete go-live notifications</li>
+    <li>YouTube Data API v3 — to post and delete community posts</li>
+    <li>Facebook Graph API — to post and delete Page posts</li>
+    <li>Instagram Content Publishing API — to post feed content</li>
+  </ul>
+  <p>
+    Each API integration operates only on the operator's own accounts. No
+    third-party user data is accessed, stored, or processed.
+  </p>
+
+  <h2>04 — DATA RETENTION</h2>
+  <p>
+    No user data is retained. API tokens are stored locally on the operator's
+    own machine and are never transmitted to any server other than the
+    respective platform's official API endpoints.
+  </p>
+
+  <h2>05 — CHILDREN'S PRIVACY</h2>
+  <p>
+    This App is not directed at children and does not knowingly collect
+    information from anyone under the age of 13.
+  </p>
+
+  <h2>06 — CHANGES TO THIS POLICY</h2>
+  <p>
+    This policy may be updated periodically. The "Last Updated" date at the
+    top of this page reflects the most recent revision.
+  </p>
+
+  <h2>07 — CONTACT</h2>
+  <p>
+    For privacy-related questions, contact via
+    <a href="https://twitch.tv/dn_zek">twitch.tv/dn_zek</a> or
+    <a href="https://bsky.app/profile/dn-zek.bsky.social">@dn-zek.bsky.social</a>.
+  </p>
+
+  <a class="back" href="/">← BACK TO HOME</a>
+</div>
+</body>
+</html>
